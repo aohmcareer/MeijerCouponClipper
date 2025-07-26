@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Meijer Coupon Clipper",
+  "version": "1.0",
+  "description": "Clips all Meijer coupons automatically.",
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Clip Meijer Coupons",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.meijer.com/shopping/coupons.html*"],
+      "js": ["config.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "config.js",
+    "content.js"
+  ],
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}
