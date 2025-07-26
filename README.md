@@ -13,7 +13,7 @@ This is a Firefox browser extension that automates the process of clipping coupo
     Make sure you have all the extension files (`manifest.json`, `config.js`, `content.js`, `popup.html`, `popup.js`, and the `icons` directory) in a single directory.
 
 2.  **Open Firefox and navigate to `about:debugging`:**
-    You can type this directly into the address bar and press Enter.
+    You can type this directly into the address bar and press Enter. You may also have to allow it to run on sites with restrictions at `about:addons` and clicking the extension there and reloading the extension and refreshing.
 
 3.  **Load the extension:**
     - Click on "This Firefox" in the sidebar.
